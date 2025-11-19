@@ -1,10 +1,17 @@
-let container = document.getElementById('container')
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".container");
 
-toggle = () => {
-	container.classList.toggle('sign-in')
-	container.classList.toggle('sign-up')
-}
+  // Start in login mode
+  container.classList.add("sign-in");
 
-setTimeout(() => {
-	container.classList.add('sign-in')
-}, 200)
+  // Fix the toggle function
+  window.toggle = function () {
+    if (container.classList.contains("sign-in")) {
+      container.classList.remove("sign-in");
+      container.classList.add("sign-up");
+    } else {
+      container.classList.remove("sign-up");
+      container.classList.add("sign-in");
+    }
+  };
+});
