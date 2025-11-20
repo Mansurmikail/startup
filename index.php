@@ -462,7 +462,7 @@ require_once 'core/init.php';
                         <div class="info">
                             <div class="info-item">
                                 <div class="left-info">
-                                    <h4><a href="project-details.html">IT Counsultancy</a></h4>
+                                    <h4><a href="project-details.html">IT Counsultancies</a></h4>
                                     <a class="cat" href="#">Technology</a>
                                 </div>
                                 <div class="right-info">
